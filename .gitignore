@@ -1,0 +1,12 @@
+/.project
+/target/
+/release.properties
+/logs/
+/.settings/
+/.classpath
+/.idea/
+/bin/
+*.iml
+*.swp
+/dependency-reduced-pom.xml
+*.DS_Store
