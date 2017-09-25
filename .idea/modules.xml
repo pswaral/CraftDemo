@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CraftDemo.iml" filepath="$PROJECT_DIR$/CraftDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../businessprofile/businessprofile.iml" filepath="$PROJECT_DIR$/../businessprofile/businessprofile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../genericexpenses/genericexpenses.iml" filepath="$PROJECT_DIR$/../genericexpenses/genericexpenses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../selfemployed_schc_metatopic/selfemployed_schc_metatopic.iml" filepath="$PROJECT_DIR$/../selfemployed_schc_metatopic/selfemployed_schc_metatopic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Interview-Service-Java/interview-service/us-interview-service.iml" filepath="$PROJECT_DIR$/../Interview-Service-Java/interview-service/us-interview-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Interview-Service-Java/us-interview-service-parent.iml" filepath="$PROJECT_DIR$/../Interview-Service-Java/us-interview-service-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: uk.org.simonsite:log4j-rolling-appender:20131024-2017">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/uk/org/simonsite/log4j-rolling-appender/20131024-2017/log4j-rolling-appender-20131024-2017.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/uk/org/simonsite/log4j-rolling-appender/20131024-2017/log4j-rolling-appender-20131024-2017-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/uk/org/simonsite/log4j-rolling-appender/20131024-2017/log4j-rolling-appender-20131024-2017-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
