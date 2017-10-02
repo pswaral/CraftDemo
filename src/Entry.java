@@ -17,7 +17,7 @@ public class Entry {
      * Constructor
      * Set current content
      * Set status to false
-     * @param content
+     * @param content - text in an entry
      */
     public Entry(String content) {
         if(content == null)
@@ -31,7 +31,7 @@ public class Entry {
     /**
      * Get content of current entry
      *
-     * @return
+     * @return content - text in an entry
      */
     public String getContent() {
         return this.content;
@@ -40,7 +40,7 @@ public class Entry {
     /**
      * Sets content of current entry
      *
-     * @param content
+     * @param content - text in an entry
      */
     public void setContent(String content) {
         this.content = content;
@@ -49,7 +49,7 @@ public class Entry {
     /**
      * Sets status of current entry
      *
-     * @param status
+     * @param status - status of an entry
      */
     public void setStatus(boolean status) {
         this.status = status;
@@ -58,7 +58,7 @@ public class Entry {
     /**
      * Gets status of current entry
      *
-     * @return
+     * @return - status of an entry
      */
     public boolean getStatus() {
         return this.status;

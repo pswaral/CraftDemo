@@ -8,42 +8,36 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /* Simulating get request, browswer/client is doing the get request*/
+        /*  Get list of sheets */
         List<Sheet> listofSheets = getSheets();
-        System.out.println(listofSheets);
 
-        /* Simulating adding/post request a todolist */
-        ToDoList toDoList1 = new ToDoList("Wedding");
+        /* Add a new todolist */
+        ToDoList toDoList = new ToDoList("Wedding");
         List<Entry> listOfEntries = new ArrayList<>();
         Entry entry1 = new Entry("bridal dress");
         listOfEntries.add(entry1);
-        toDoList1.setListOfEntries(listOfEntries);
-        postSheet(toDoList1);
+        toDoList.setListOfEntries(listOfEntries);
+        postSheet(toDoList);
         listofSheets = getSheets();
-        System.out.println(listofSheets);
 
-        /* Simulating adding/post request a note */
+        /* Add a new note */
         Note note1 = new Note("Grocerry");
         note1.setContent("get sugar");
         postSheet(note1);
         listofSheets = getSheets();
-        System.out.println(listofSheets);
 
         /* Get a sheet */
         Sheet sheet1 = getSheet(1);
         System.out.println(sheet1);
         listofSheets = getSheets();
-        System.out.println(listofSheets);
 
         /* Simulating a put for an update to a note */
         put(1, "Grocerry For the weekend", Sheet.Type.Note, "get milk and sugar",null);
         listofSheets = getSheets();
-        System.out.println(listofSheets);
 
         /* Simulating a delete request */
         delete(1);
         listofSheets = getSheets();
-        System.out.println(listofSheets);
 
     }
 
