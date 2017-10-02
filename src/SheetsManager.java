@@ -12,7 +12,7 @@ public class SheetsManager {
     /**
      * Simulated database in memory
      */
-    private Map<Integer, BlankSheet> dataBase;
+    private Map<Integer, Sheet> dataBase;
 
     /**
      * Constructor
@@ -25,7 +25,7 @@ public class SheetsManager {
     /**
      * Gets current instance of SheetsManager
      * create an instance if not existing
-     * @return
+     * @return cached single instance of SheetsManager
      */
     public static SheetsManager getSheetsManager() {
        if(sheetsManager == null ) {
@@ -37,17 +37,26 @@ public class SheetsManager {
     /**
      * Adds a new sheet and sets its id
      * and adds it in the database
-     * @param sheet
+     * @param sheet - sheet to be added
      */
-    public void addSheet(BlankSheet sheet) {
+    public void addSheet(Sheet sheet) {
         Integer id = dataBase.size();
         sheet.setId(id);
         dataBase.put(id, sheet);
     }
 
     /**
+     * Get a particular sheet
+     * @param id - sheet id
+     * @return Sheet - return the request sheet
+     */
+    public Sheet getSheet(int id) {
+        return dataBase.get(id);
+    }
+
+    /**
      * Removes the current sheet from the database
-     * @param id
+     * @param id - sheet's id
      */
     public void deleteSheet(int id) {
         dataBase.remove(id);
@@ -62,7 +71,7 @@ public class SheetsManager {
 
     /**
      * Deletes selected multiple sheets
-     * @param markedSheets
+     * @param markedSheets - checked list of sheets to be deleted
      */
     public void deleteMultipleSheets(int[] markedSheets) {
         for (int index: markedSheets) {
@@ -72,9 +81,9 @@ public class SheetsManager {
 
     /**
      * Gets the entire list of sheets
-     * @return
+     * @return List<Sheet> - list of all sheets from the database
      */
-    public List<BlankSheet> getSheets() {
+    public List<Sheet> getSheets() {
         return new ArrayList<>(dataBase.values());
     }
 

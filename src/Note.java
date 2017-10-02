@@ -1,7 +1,7 @@
 /**
- * Child class Note of Blanksheet
+ * Child class Note of Sheet
  */
-public class Note extends BlankSheet{
+public class Note extends Sheet {
 
     /**
      * Note's content
@@ -10,8 +10,8 @@ public class Note extends BlankSheet{
 
     /**
      * Constructor for Note
-     * Overidden constructor from parent class to set title
-     * Set type of Blanksheet to Note
+     * Over ridden constructor from parent class to set title
+     * Set type of Sheet to Note
      * Set content to empty string
      *
      * @param title

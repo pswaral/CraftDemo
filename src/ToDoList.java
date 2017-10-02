@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * Child class ToDoList of Blanksheet
  */
-public class ToDoList extends BlankSheet {
+public class ToDoList extends Sheet {
 
     /**
      * List of entries
@@ -13,14 +13,14 @@ public class ToDoList extends BlankSheet {
     /**
      * Constructor
      * Overidden constructor from parent class to set title
-     * Set type of Blanksheet to ToDoList
+     * Set type of Sheet to ToDoList
      * Set list of entries to an empty arraylist
      *
      * @param title
      */
     public ToDoList(String title) {
         super(title);
-        this.setType(Type.Task);
+        this.setType(Type.ToDoList);
         this.listOfEntries = new ArrayList<>();
     }
 

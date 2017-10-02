@@ -1,17 +1,17 @@
 /**
  * Base Class for a sheet
  */
-public abstract class BlankSheet {
+public abstract class Sheet {
 
     /**
-     * Blanksheet Type
+     * Sheet Type
      */
     public enum Type {
-        Task, Note;
+        ToDoList, Note;
     }
 
     /**
-     * ID, Title, Type of Blanksheet
+     * ID, Title, Type of sheet
      */
     private int id;
     private String title;
@@ -19,16 +19,19 @@ public abstract class BlankSheet {
 
     /**
      * Constructor
-     * set title on everytime a blanksheet is created
+     * set title on everytime a sheet is created
      *
      * @param title
      */
-    public BlankSheet(String title) {
-        this.title = title;
+    public Sheet(String title) {
+        if(title == null)
+            throw new IllegalArgumentException("Null content");
+        else
+            this.title = title;
     }
 
     /**
-     * Sets title for a blank sheet
+     * Sets title for a sheet
      *
      * @param title
      */
@@ -37,7 +40,7 @@ public abstract class BlankSheet {
     }
 
     /**
-     * Gets title of the blank sheet
+     * Gets title of the sheet
      *
      * @return value of title
      */
@@ -46,7 +49,7 @@ public abstract class BlankSheet {
     }
 
     /**
-     * Sets type of the blanksheet
+     * Sets type of the sheet
      *
      * @param type
      */
@@ -55,7 +58,7 @@ public abstract class BlankSheet {
     }
 
     /**
-     * Gets type of the blank sheet
+     * Gets type of the sheet
      *
      * @return value of type
      */
@@ -64,7 +67,7 @@ public abstract class BlankSheet {
     }
 
     /**
-     * Gets ID of the blanksheet
+     * Gets ID of the sheet
      *
      * @return value of id
      */
@@ -73,7 +76,7 @@ public abstract class BlankSheet {
     }
 
     /**
-     * Sets ID of a blanksheet
+     * Sets ID of a sheet
      *
      * @param id
      */

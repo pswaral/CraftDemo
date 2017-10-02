@@ -4,9 +4,13 @@
 public class Entry {
 
     /**
-     * Content and status for each entry
+     * Content for each entry
      */
     private String content;
+
+    /**
+     * Status for each entry
+     */
     private boolean status;
 
     /**
@@ -16,7 +20,11 @@ public class Entry {
      * @param content
      */
     public Entry(String content) {
-        this.content = content;
+        if(content == null)
+            throw new IllegalArgumentException("Null content");
+        else
+            this.content = content;
+
         this.status = false;
     }
 
