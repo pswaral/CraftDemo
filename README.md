@@ -1,8 +1,6 @@
-# craftdemo
+# Craft Demo to simulate an application analogous to Google Keep
 
-## Craft Demo to simulate an application analogous to Google Keep
-
-### Sample response for get sheets
+## Sample response for get sheets
 {⋅⋅
   "sheets": [⋅⋅
     {⋅⋅
@@ -26,3 +24,4 @@
     }⋅⋅
   ]⋅⋅
 }⋅⋅
+
