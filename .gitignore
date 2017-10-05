@@ -6,6 +6,7 @@
 /.classpath
 /.idea/
 /bin/
+/out/
 *.iml
 *.swp
 /dependency-reduced-pom.xml
