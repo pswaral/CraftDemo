@@ -25,7 +25,7 @@ public abstract class Sheet {
      */
     public Sheet(String title) {
         if(title == null)
-            throw new IllegalArgumentException("Null content");
+            throw new IllegalArgumentException("Null title");
         else
             this.title = title;
     }

@@ -21,7 +21,7 @@ public class Entry {
      */
     public Entry(String content) {
         if(content == null)
-            throw new IllegalArgumentException("Null content");
+            throw new IllegalArgumentException("Null content for entry");
         else
             this.content = content;
 

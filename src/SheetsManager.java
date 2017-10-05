@@ -9,6 +9,7 @@ public class SheetsManager {
      * Singleton pattern using static one instance
      */
     private static SheetsManager sheetsManager;
+
     /**
      * Simulated database in memory
      */

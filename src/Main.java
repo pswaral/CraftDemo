@@ -14,7 +14,8 @@ public class Main {
         /* Add a new todolist */
         ToDoList toDoList = new ToDoList("Wedding");
         List<Entry> listOfEntries = new ArrayList<>();
-        Entry entry1 = new Entry("bridal dress");
+        Entry entry1 = new Entry("photography");
+        entry1.setStatus(true);
         listOfEntries.add(entry1);
         toDoList.setListOfEntries(listOfEntries);
         postSheet(toDoList);
@@ -32,7 +33,7 @@ public class Main {
         listofSheets = getSheets();
 
         /* Simulating a put for an update to a note */
-        put(1, "Grocerry For the weekend", Sheet.Type.Note, "get milk and sugar",null);
+        put(1, "Grocerry for the weekend", Sheet.Type.Note, "get milk and sugar",null);
         listofSheets = getSheets();
 
         /* Simulating a delete request */
@@ -75,7 +76,7 @@ public class Main {
     public static List<Sheet> getSheets() {
         // on the class, no need to create new object, storing the value in the same instance
         SheetsManager sheets = SheetsManager.getSheetsManager();
-        return sheets.getSheets(); //wrapped around return as a json
+        return sheets.getSheets();
 
         /* If we had a request and response objects */
         //SheetsManager sheets = SheetsManager.getSheetsManager();

@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Child class ToDoList of Blanksheet
+ * Child class ToDoList of Sheet
  */
 public class ToDoList extends Sheet {
 
@@ -29,8 +29,10 @@ public class ToDoList extends Sheet {
      * @param content
      */
     public void addNewEntry(String content) {
-        //throw exception if content is null
-        listOfEntries.add(new Entry(content));
+        if(content != null)
+            listOfEntries.add(new Entry(content));
+        else
+            throw new IllegalArgumentException("null content");
     }
 
     /**
@@ -38,7 +40,10 @@ public class ToDoList extends Sheet {
      * @param index
      */
     public void deleteEntry(int index) {
-        listOfEntries.remove(index);
+        if(index < listOfEntries.size())
+            listOfEntries.remove(index);
+        else
+            throw new IndexOutOfBoundsException("index is invalid");
     }
 
     /**
@@ -48,8 +53,13 @@ public class ToDoList extends Sheet {
      * @param content
      */
     public void updateEntry(int index, String content) {
-        Entry currentEntry = listOfEntries.get(index);
-        currentEntry.setContent(content);
+        if(index < listOfEntries.size() && content != null) {
+            Entry currentEntry = listOfEntries.get(index);
+            currentEntry.setContent(content);
+        }
+        else {
+            throw new IllegalArgumentException("Content is null or index of out bound");
+        }
     }
 
     /**
@@ -59,8 +69,10 @@ public class ToDoList extends Sheet {
      * @param status
      */
     public void updateEntry(int index, boolean status) {
-        Entry currentEntry = listOfEntries.get(index);
-        currentEntry.setStatus(status);
+        if(index < listOfEntries.size()) {
+            Entry currentEntry = listOfEntries.get(index);
+            currentEntry.setStatus(status);
+        }
     }
 
     /**
@@ -70,9 +82,14 @@ public class ToDoList extends Sheet {
      * @param status
      */
     public void updateEntry(int index, String content, boolean status) {
-        Entry currentEntry = listOfEntries.get(index);
-        currentEntry.setContent(content);
-        currentEntry.setStatus(status);
+        if(index < listOfEntries.size() && content != null) {
+            Entry currentEntry = listOfEntries.get(index);
+            currentEntry.setContent(content);
+            currentEntry.setStatus(status);
+        }
+        else {
+            throw new IllegalArgumentException("Content is null or index of out bound");
+        }
     }
 
     /**
