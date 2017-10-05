@@ -3,7 +3,7 @@
 
 ![alt tag](images/ERDiagram2.png "Description goes here")
 
-### Sample response for get sheets
+### Sample mock server response (GET /sheets)
 ```
 {
   "sheets": [
