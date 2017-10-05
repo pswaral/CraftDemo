@@ -1,6 +1,7 @@
-# craftdemo
 
 ## Craft Demo to simulate an application analogous to Google Keep
+
+![alt tag](images/ERDiagram2.png "Description goes here")
 
 ### Sample response for get sheets
 ```
