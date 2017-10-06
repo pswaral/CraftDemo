@@ -1,5 +1,6 @@
 /**
- *
+ * Sample test file since junit is not imported
+ * file is commented out to avoid compile errors
 
 public class ToDoListTest {
 
